@@ -1,1 +1,8 @@
 <p>framework-snippet</p>
+
+<div
+  id="add-to-cart"
+  data-variant-id="{{ product.selected_or_first_available_variant.id }}"
+  data-title="{{ product.title }}"
+></div>
+<script type="module" src="{{ 'add-to-cart.js' | asset_url }}" defer></script>

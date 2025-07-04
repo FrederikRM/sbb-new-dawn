@@ -7,8 +7,8 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        counter: "src/components/counter/main.js",
         "add-to-cart": "src/components/buttons/main.js",
+        "main-style": "src/style.css",
       },
       output: {
         dir: "assets",
@@ -19,7 +19,7 @@ export default defineConfig({
     },
     emptyOutDir: false,
     watch: {
-      ignored: ["**/assets/**"],
+      exclude: ["assets/**"],
     },
   },
 });
